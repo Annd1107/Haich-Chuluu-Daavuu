@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #d40505;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .game{
+        background-color: #fff;
+        border-radius: 10px;
+        padding:20px;
+        width:600px;
+        height: 550px;
+    }
+    .game img{
+        width:30%;
+        margin-left:10px;
+        cursor:pointer ;
+    }
+    .win{
+        font-size: 50px;
+        font: bold;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        background-color: red;
+        color: white;
+        width: 200px;
+        height:50px;
+        margin-left: 200px;
+        font: size 15px;
+        border:hidden;
+    }
+</style>
+<body>
+<div class="game">
+    <div class="result">
+        <h3 class="pCount">Player:0</h3>
+        <h3 class="cCount">Computer:0</h3>
+    </div>
+        <div class="choice">
+            <img src="https://www.vhv.rs/dpng/d/535-5351099_rock-paper-scissors-rock-paper-scissors-icons-png.png"
+            onclick="play('paper')">
+            <img src="https://toppng.com/uploads/preview/rock-paper-scissors-circle-11562962494dqcjusyikw.png"
+            onclick="play('rock')">
+            <img src="https://yvana.org/games/games-images/rock-paper-scissor/scissors.png"
+            onclick="play('scissors')">
+        </div>
+        <div class="players">
+            <p class="player">Players choice:</p>
+            <p class="computer">Computers choice:</p>
+            <p class="win"></p>
+        </div>
+        <div class="reset">
+            <button onclick="reset()">Reset</button>
+        </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
